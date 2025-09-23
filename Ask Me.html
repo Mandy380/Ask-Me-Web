@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming</title>
+    <style>
+      body {
+        display: block;
+        text-align: center;
+        margin: 10px;
+      }
+      div {
+        display: block;
+        background: linear-gradient(#d79df8, #badfeb);
+        line-height: 1.2em;
+        font-size: 13pt;
+        margin: 30px 30px;
+        padding: 30px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 400;
+      }
+      img {
+        border-radius: 6px;
+        border: 4px 6px;
+      }
+
+      p {
+        padding: 12px;
+        margin: 10px;
+        border: 15px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 5px 10px;
+        margin: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: red;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #77f3f3;
+        background: #e7a8ec;
+        color: #fff;
+        font-size: 30px;
+        line-height: 20px;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        cursor: pointer;
+        background: white;
+        color: #c735f3c0;
+        border: 1px solid #521ce7ef;
+      }
+      .footer {
+        font-size: 15px;
+        font-style: italic;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Love of GAM!NG</h1>
+      <h2>Artificial Intelligent in Gaming</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/106/original/AI-Gaming.jpeg?1741823031"
+        alt="AI gaming"
+        width="300px"
+      />
+      <hr />
+      <p>
+        <strong>Artificial Intelligent</strong> refers to integration of
+        <a
+          href="https://www.engati.com/glossary/artificial-intelligence"
+          target="_blank"
+        >
+          artificial intelligent</a
+        >
+        techniques and technologies into video games to create more dynamic,
+        responsive, and immersive gameplay experiences. It involves programming
+        computer-controlled characters
+        <span>(non-player characters or NPCs)</span> and entities within the
+        game environment to exhibit intelligent behaviors, make decisions, and
+        interact with the player and the game world in a lifelike manner. Think
+        of it as a virtual mind for the characters and components in a video
+        game, breathing life into the digital realm and making it interactive,
+        almost as if you're engaging with real entities.
+        <em>Examples of AI Games:</em>
+      </p>
+      <ul>
+        <li>Forza Motorsport Series</li>
+        <li>Fifa Series</li>
+        <li>Minecraft</li>
+        <span>
+          <li>
+            <a href="https://www.engati.com/blog/ai-for-gaming" target="_blank">
+              More About AI in gaming
+            </a>
+          </li>
+        </span>
+      </ul>
+      <br />
+
+      <button>Ask Me</button>
+      <p class="footer">Coded by Amanda Msiza</p>
+    </div>
+  </body>
+  <script>
+    function ask_me() {
+      let name = prompt("What is you Name?");
+      let ans = prompt("Do you love playing Game: Yes or No?");
+
+      if (!name) {
+        alert("Please Enter your Name:");
+      }
+      if (!ans) {
+        alert("Please Enter your Ans:");
+      } else {
+        if (ans === "Yes") {
+          alert(`Thank you, ${name}, and I'm glad you Love Games`);
+        } else {
+          alert(`Sorry to here that ${name}`);
+        }
+      }
+    }
+
+    let btn = document.querySelector("button");
+    btn.addEventListener("click", ask_me);
+  </script>
+</html>
